@@ -1,8 +1,6 @@
 #pragma once
 
-#include <iostream>
-#include <memory>
-#include <WinSock2.h>
+#include "stdafx.h"
 
 namespace SmolNet
 {
@@ -31,7 +29,7 @@ namespace SmolNet
 		/*
 		* Returns the size of sockaddr.
 		*/
-		size_t getSize();
+		size_t GetSize();
 
 	private:
 		/*
@@ -42,7 +40,7 @@ namespace SmolNet
 		/*
 		* Returns a pointer to a sockaddr IPv4 type.
 		*/
-		sockaddr_in* getAsSockAddrIn();
+		sockaddr_in* GetAsSockAddrIn();
 	};
 
 	/*
